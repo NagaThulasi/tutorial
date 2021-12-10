@@ -1,0 +1,13 @@
+.jobs-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.jobs-section-success view {
+  display: flex;
+  flex-direction: column;
+}
+.input-element {
+  margin-left: 50px;
+  width: 300px;
+}
