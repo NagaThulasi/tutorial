@@ -60,6 +60,10 @@ class ProfileSection extends Component {
     }
   }
 
+  onClickRetryBtn = () => {
+    this.getProfileDetails()
+  }
+
   renderSuccessView = () => {
     const {profileDetails} = this.state
     return (
@@ -82,7 +86,11 @@ class ProfileSection extends Component {
   )
 
   renderFailureView = () => (
-    <button type="button" className="retry-button">
+    <button
+      type="button"
+      className="retry-button"
+      onClick={this.onClickRetryBtn}
+    >
       Retry
     </button>
   )

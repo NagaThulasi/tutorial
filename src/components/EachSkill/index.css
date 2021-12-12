@@ -1,0 +1,11 @@
+.each-skill {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  margin: 20px;
+}
+.image {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}

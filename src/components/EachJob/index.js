@@ -1,4 +1,7 @@
 import {Link} from 'react-router-dom'
+import {AiFillStar} from 'react-icons/ai'
+import {MdLocationOn} from 'react-icons/md'
+import {RiHandbagFill} from 'react-icons/ri'
 
 import './index.css'
 
@@ -17,14 +20,16 @@ const EachJob = props => {
           <div className="title-rating-container">
             <h1 className="job-title">{jobDetails.title}</h1>
             <div className="rating-container">
-              <i className="fas fa-star"> </i>
+              <AiFillStar className="star" />
               <p className="rating">{jobDetails.rating}</p>
             </div>
           </div>
         </div>
         <div className="job-details-container">
           <div className="job-location-container">
-            <p className="location">{jobDetails.location}</p>
+            <MdLocationOn className="location" />
+            <p className="location-text">{jobDetails.location}</p>
+            <RiHandbagFill className="job-type" />
             <p className="job-type">{jobDetails.employmentType}</p>
           </div>
           <p className="salary">{jobDetails.packagePerAnnum}</p>
